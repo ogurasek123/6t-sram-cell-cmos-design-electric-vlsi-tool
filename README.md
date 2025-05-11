@@ -51,11 +51,15 @@ SRAM_CELL/
   - Data read/write via **Bitline** and **Bitline_Bar**.
   - Internal state stored between nodes **Q** and **Q_Bar**.
 
+![6T SRAM CELL CMOS CIRCUIT DESIGN](https://github.com/user-attachments/assets/93c49204-61b2-41e0-82ed-e3657c9f7cf5)
+
 ### ➤ Layout
 
 - Created in **Electric VLSI** using custom standard cells.
 - Connections match schematic 1:1 (DRC clean).
-- No LVS verification is included, but layout mirrors logical design accurately.
+- DRC/LVS/ERC passed successfully.
+
+![6T SRAM CELL CMOS LAYOUT DESIGN](https://github.com/user-attachments/assets/bf638644-23bc-46ea-8e21-eb9626524c7f)
 
 ---
 
